@@ -16,6 +16,8 @@ public class TestServlet extends HttpServlet {
 	}
 	protected void service(HttpServletRequest request, HttpServletResponse response) 
 		throws ServletException, IOException {
+//		response.setContentType(request.getContentType());
 		System.out.println("in service");
+		response.sendRedirect("https://google.com");
 	}
 }

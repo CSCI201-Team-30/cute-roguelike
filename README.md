@@ -1,5 +1,0 @@
-# Rate My Course
-
-## Introduction
-
-Our goal is to develop a website that allows students to rate their overall experience with a particular course, taking into account things like course content, workload, and overall experience.  In cases where more than one instructor is teaching the same class, students will have the option to include the instructor's name and a few comments on the professor. By concentrating on the course itself, we hope to provide students with useful knowledge about the educational process, which can help them make informed decisions when selecting courses and organizing their academic journey. Our website will have a user-friendly user interface that will allow students to search for courses and instructors quickly, narrow their results using ratings and reviews, and add their own reviews.  To empower students to take charge of their academic careers, we want to develop a community-driven platform that fosters transparency and accountability in higher education.
