@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Rate My Course</title>
+	<title>Course Search</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/> 
 </head>
 <body>
+    <button class="menu-btn">Menu</button> 
+    <center>
 	<h1>Rate My Course</h1>
-	<p>We have a long way to go.</p>
+	<p>Search for specific courses:</p>
+	<input type="text" id="search-box" placeholder="Enter course name or code">
+	<button type="button" id="search-btn">Search</button>
+	<div id="search-results"></div>
+    </center>
+	<script>
+		// JavaScript code for handling the search function
+		var searchBox = document.getElementById("search-box");
+		var searchButton = document.getElementById("search-btn");
+		var searchResults = document.getElementById("search-results");
+
+		searchButton.addEventListener("click", function() {
+			var searchTerm = searchBox.value.toLowerCase();
+			const arr = [
+					{ 
+    					"courseID": 1,
+    					"professor": {
+      					"professorID": 1,
+      					"name": "Marco Papa"
+    					},
+    					"courseNumber": "CSCI 270",
+    					"courseName": "Intro to Algorithms",
+    					"averageRating": 4
+  					},
+  					{ 
+    					"courseID": 2,
+    					"professor": 
+						{
+      					"professorID": 2,
+      					"name": "Karco Paprika"
+    					},
+    					"courseNumber": "CSCI 120",
+    					"courseName": "Intro to Smalgorithms",
+    					"averageRating": 3
+  					}];
+			if (searchTerm === "") {
+				searchResults.innerHTML = "<p>Please enter a search term.</p>";
+			} else {
+				// Here, you would write code to search for the term in your course database and display the results.
+				searchResults.innerHTML = "<p>Search results for <strong>" + searchTerm + "</strong>:</p>";
+				for (let i = 0; i < arr.length; i++) {
+      				searchResults.innerHTML += "<p>" + JSON.stringify(arr[i]) + "</p>";
+				}
+				/*
+                fetch("/api/search?query=")
+                .then(resp => resp.json())
+                .then(data => {
+                    console.log(data)
+                })
+				*/
+			}
+		});
+	</script>
+    <!-- 
+    <form method="POST" action="lab3.php">
+        <input type="number" name="user_input" />
+        <input type="submit" value="Submit guess!" />
+    </form> -->
 </body>
 </html>

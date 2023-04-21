@@ -1,0 +1,22 @@
+[
+  { 
+    "courseID": 1,
+    "professor": {
+      "professorID": 1,
+      "name": "Marco Papa"
+    },
+    "courseNumber": "CSCI 270",
+    "courseName": "Intro to Algorithms",
+    "averageRating": 4
+  },
+  { 
+    "courseID": 2,
+    "professor": {
+      "professorID": 2,
+      "name": "Karco Paprika"
+    },
+    "courseNumber": "CSCI 120",
+    "courseName": "Intro to Smalgorithms",
+    "averageRating": 3
+  }
+]
