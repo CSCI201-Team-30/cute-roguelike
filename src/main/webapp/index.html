@@ -22,35 +22,59 @@
 		searchButton.addEventListener("click", function() {
 			var searchTerm = searchBox.value.toLowerCase();
 			const arr = [
-					{ 
-    					"courseID": 1,
-    					"professor": {
+  				{
+    				"courseID": 1,
+    				"professor": {
       					"professorID": 1,
-      					"name": "Marco Papa"
-    					},
-    					"courseNumber": "CSCI 270",
-    					"courseName": "Intro to Algorithms",
-    					"averageRating": 4
-  					},
-  					{ 
-    					"courseID": 2,
-    					"professor": 
-						{
+						"name": "Marco Papa"
+    				},
+    				"courseNumber": "CSCI 270",
+    				"courseName": "Intro to Algorithms",
+   					"averageRating": 4
+  				},
+  				{
+    				"courseID": 2,
+    				"professor": 
+					{
       					"professorID": 2,
       					"name": "Karco Paprika"
-    					},
-    					"courseNumber": "CSCI 120",
-    					"courseName": "Intro to Smalgorithms",
-    					"averageRating": 3
-  					}];
-			if (searchTerm === "") {
-				searchResults.innerHTML = "<p>Please enter a search term.</p>";
-			} else {
-				// Here, you would write code to search for the term in your course database and display the results.
-				searchResults.innerHTML = "<p>Search results for <strong>" + searchTerm + "</strong>:</p>";
-				for (let i = 0; i < arr.length; i++) {
-      				searchResults.innerHTML += "<p>" + JSON.stringify(arr[i]) + "</p>";
-				}
+    				},
+    				"courseNumber": "CSCI 120",
+    				"courseName": "Intro to Smalgorithms",
+    				"averageRating": 3
+  				}
+			];
+
+			const arrayOfObjects = arr.map(course => ({
+  			courseID: course.courseID,
+  			professor: {
+    		professorID: course.professor.professorID,
+    		name: course.professor.name
+  		},
+  		courseNumber: course.courseNumber,
+  		courseName: course.courseName
+		}));
+
+	if (searchTerm === "") {
+  	searchResults.innerHTML = "<p>Please enter a search term.</p>";
+	} else {
+  	// Here, you would write code to search for the term in your course database and display the results.
+  	searchResults.innerHTML = "<p>Search results for <strong>" + searchTerm + "</strong>:</p>";
+  	for (let i = 0; i < arr.length; i++) {
+    	const course = arr[i];
+    	const professor = course.professor;
+    	const html = `
+      	<div>
+        	<h2>${course.courseName}</h2>
+        	<p>Course ID: ${course.courseID}</p>
+        	<p>Professor: ${professor.name} (ID: ${professor.professorID})</p>
+        	<p>Course Number: ${course.courseNumber}</p>
+        	<p>Average Rating: ${course.averageRating}</p>
+      	</div>
+    `	;
+    	searchResults.innerHTML += html;
+  	}
+	}
 				/*
                 fetch("/api/search?query=")
                 .then(resp => resp.json())
@@ -59,7 +83,7 @@
                 })
 				*/
 			}
-		});
+		);
 	</script>
     <!-- 
     <form method="POST" action="lab3.php">
