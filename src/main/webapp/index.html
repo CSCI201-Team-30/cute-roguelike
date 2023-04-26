@@ -5,76 +5,84 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"/> 
 </head>
 <body>
-    <button class="menu-btn">Menu</button> 
-    <center>
-	<h1>Rate My Course</h1>
-	<p>Search for specific courses:</p>
-	<input type="text" id="search-box" placeholder="Enter course name or code">
-	<button type="button" id="search-btn">Search</button>
-	<div id="search-results"></div>
-    </center>
+	<button class="menu-btn">Menu</button>
+	<center>
+	  <h1>Rate My Course</h1>
+	  <p>Search for specific courses:</p>
+	  <input type="text" id="search-box" placeholder="Enter course code">
+	  <button type="button" id="search-btn">Search</button>
+	  <div id="search-results"></div>
+	</center>
 	<script>
-		// JavaScript code for handling the search function
-		var searchBox = document.getElementById("search-box");
-		var searchButton = document.getElementById("search-btn");
-		var searchResults = document.getElementById("search-results");
-
-		searchButton.addEventListener("click", function() {
-			var searchTerm = searchBox.value.toLowerCase();
-			const arr = [
-  				{
-    				"courseID": 1,
-    				"professor": {
-      					"professorID": 1,
-						"name": "Marco Papa"
-    				},
-    				"courseNumber": "CSCI 270",
-    				"courseName": "Intro to Algorithms",
-   					"averageRating": 4
-  				},
-  				{
-    				"courseID": 2,
-    				"professor": 
-					{
-      					"professorID": 2,
-      					"name": "Karco Paprika"
-    				},
-    				"courseNumber": "CSCI 120",
-    				"courseName": "Intro to Smalgorithms",
-    				"averageRating": 3
-  				}
-			];
-
-			const arrayOfObjects = arr.map(course => ({
-  			courseID: course.courseID,
-  			professor: {
-    		professorID: course.professor.professorID,
-    		name: course.professor.name
-  		},
-  		courseNumber: course.courseNumber,
-  		courseName: course.courseName
+	  // JavaScript code for handling the search function
+	  var searchBox = document.getElementById("search-box");
+	  var searchButtonElement = document.getElementById("search-btn");
+	  var searchResults = document.getElementById("search-results");
+  
+	  searchButtonElement.addEventListener("click", function() {
+		var searchTerm = searchBox.value.toLowerCase();
+		const arr = [
+		  {
+			"courseID": 1,
+			"professor": {
+			  "professorID": 1,
+			  "name": "Marco Papa"
+			},
+			"courseNumber": "CSCI 270",
+			"courseName": "Intro to Algorithms",
+			"averageRating": 4
+		  },
+		  {
+			"courseID": 2,
+			"professor":
+			{
+			  "professorID": 2,
+			  "name": "Karco Paprika"
+			},
+			"courseNumber": "CSCI 120",
+			"courseName": "Intro to Smalgorithms",
+			"averageRating": 3
+		  }
+		];
+  
+		const arrayOfObjects = arr.map(course => ({
+		  courseID: course.courseID,
+		  professor: {
+			professorID: course.professor.professorID,
+			name: course.professor.name
+		  },
+		  courseNumber: course.courseNumber,
+		  courseName: course.courseName
 		}));
+  
+		if (searchTerm === "") {
+		  searchResults.innerHTML = "<p>Please enter a search term.</p>";
+		} else {
+		  // Here, you would write code to search for the term in your course database and display the results.
+		  const searchResult = arr.find(course => course.courseNumber.toLowerCase() === searchTerm);
+		  if (searchResult) {
+			const course = arr.find(course => course.courseNumber.toLowerCase());
+    		const professor = course.professor;
+			const html = `
+      		<div>
+        		<h2>${course.courseName}</h2>
+        		<p>Course ID: ${course.courseID}</p>
+        		<p>Professor: ${professor.name} (ID: ${professor.professorID})</p>
+        		<p>Course Number: ${course.courseNumber}</p>
+        		<p>Average Rating: ${course.averageRating}</p>
+      		</div>
+			`;
 
-	if (searchTerm === "") {
-  	searchResults.innerHTML = "<p>Please enter a search term.</p>";
-	} else {
-  	// Here, you would write code to search for the term in your course database and display the results.
-  	searchResults.innerHTML = "<p>Search results for <strong>" + searchTerm + "</strong>:</p>";
-  	for (let i = 0; i < arr.length; i++) {
-    	const course = arr[i];
-    	const professor = course.professor;
-    	const html = `
-      	<div>
-        	<h2>${course.courseName}</h2>
-        	<p>Course ID: ${course.courseID}</p>
-        	<p>Professor: ${professor.name} (ID: ${professor.professorID})</p>
-        	<p>Course Number: ${course.courseNumber}</p>
-        	<p>Average Rating: ${course.averageRating}</p>
-      	</div>
-    `	;
-    	searchResults.innerHTML += html;
-  	}
-	}
+			searchResults.innerHTML = "<p>Search result for <strong>Course Number " + searchTerm.toUpperCase() + "</strong>:</p>" ;
+			searchResults.innerHTML += html;
+			//+
+			//  "<p>" + JSON.stringify(searchResult) + "</p>";
+		  } else {
+			searchResults.innerHTML = "<p>No matching course found.</p>";
+		  }
+		}
+	  });
+	
 				/*
                 fetch("/api/search?query=")
                 .then(resp => resp.json())
@@ -82,8 +90,6 @@
                     console.log(data)
                 })
 				*/
-			}
-		);
 	</script>
     <!-- 
     <form method="POST" action="lab3.php">
