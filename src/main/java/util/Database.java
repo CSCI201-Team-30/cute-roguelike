@@ -65,8 +65,6 @@ public class Database {
 		return result;
 	}
 	
-	
-	
 	// Find results that the user searches for.
 	public static List<Course> search(String query) {
 		List<Course> result = new ArrayList<Course>();
@@ -77,4 +75,5 @@ public class Database {
 		return result;
 	}
 
+	
 }

@@ -30,6 +30,8 @@ public class UserServlet extends HttpServlet {
 		response.setContentType("application/json");
 		System.out.println("Search Servlet Called");
 		
+		request.getCookies();
+		
 		int id = Integer.valueOf(request.getHeader("id"));
 		User userInfo = Database.getUserInfo(id);
 		String json = new Gson().toJson(userInfo);

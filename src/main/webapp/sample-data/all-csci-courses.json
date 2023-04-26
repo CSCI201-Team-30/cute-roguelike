@@ -1,0 +1,694 @@
+[
+    [
+        "CSCI 410x",
+        "Translation of Programming Languages"
+    ],
+    [
+        "CSCI 490x",
+        "Directed Research"
+    ],
+    [
+        "CSCI 646",
+        "Coordinated Mobile Robotics"
+    ],
+    [
+        "CSCI 648",
+        "Advanced Information Integration"
+    ],
+    [
+        "CSCI 657",
+        "Advanced Distributed Systems"
+    ],
+    [
+        "CSCI 670x",
+        "Advanced Analysis of Algorithms"
+    ],
+    [
+        "CSCI 698",
+        "Practicum in Teaching Computer Science"
+    ],
+    [
+        "CSCI 697",
+        "Seminar in Computer Science Research"
+    ],
+    [
+        "CSCI 491aL",
+        "Final Game Project"
+    ],
+    [
+        "CSCI 101L",
+        "Fundamentals of Computer Programming"
+    ],
+    [
+        "CSCI 103L",
+        "Introduction to Programming"
+    ],
+    [
+        "CSCI 104L",
+        "Data Structures and Object Oriented Design"
+    ],
+    [
+        "CSCI 109",
+        "Introduction to Computer Science"
+    ],
+    [
+        "CSCI 170",
+        "Discrete Methods in Computer Science"
+    ],
+    [
+        "CSCI 201L",
+        "Principles of Software Development"
+    ],
+    [
+        "CSCI 270",
+        "Introduction to Algorithms and Theory of Computing"
+    ],
+    [
+        "CSCI 281",
+        "Pipelines for Games and Interactives"
+    ],
+    [
+        "CSCI 310",
+        "Software Engineering"
+    ],
+    [
+        "CSCI 350",
+        "Introduction to Operating Systems"
+    ],
+    [
+        "CSCI 352L",
+        "Computer Organization and Architecture"
+    ],
+    [
+        "CSCI 353",
+        "Introduction to Internetworking"
+    ],
+    [
+        "CSCI 360",
+        "Introduction to Artificial Intelligence"
+    ],
+    [
+        "CSCI 380",
+        "Video Game Programming"
+    ],
+    [
+        "CSCI 390",
+        "Special Problems"
+    ],
+    [
+        "CSCI 402",
+        "Operating Systems"
+    ],
+    [
+        "CSCI 420",
+        "Computer Graphics"
+    ],
+    [
+        "CSCI 423",
+        "Native Console Multiplayer Game Development"
+    ],
+    [
+        "CSCI 430",
+        "Introduction to Computer and Network Security"
+    ],
+    [
+        "CSCI 445L",
+        "Introduction to Robotics"
+    ],
+    [
+        "CSCI 450",
+        "Introduction to Computer Networks"
+    ],
+    [
+        "CSCI 452",
+        "Parallel and Distributed Computation"
+    ],
+    [
+        "CSCI 454L",
+        "Introduction to System-on-Chip"
+    ],
+    [
+        "CSCI 455x",
+        "Introduction to Programming Systems Design"
+    ],
+    [
+        "CSCI 457",
+        "Computer Systems Organization"
+    ],
+    [
+        "CSCI 458",
+        "Numerical Methods"
+    ],
+    [
+        "CSCI 459",
+        "Computer Systems and Applications Modeling Fundamentals"
+    ],
+    [
+        "CSCI 476",
+        "Cryptography: Secure Communication and Computation"
+    ],
+    [
+        "CSCI 485",
+        "File and Database Management"
+    ],
+    [
+        "CSCI 487",
+        "Programming Game Engines"
+    ],
+    [
+        "CSCI 491bL",
+        "Final Game Project"
+    ],
+    [
+        "CSCI 495",
+        "Senior Project"
+    ],
+    [
+        "CSCI 499",
+        "Special Topics"
+    ],
+    [
+        "CSCI 501",
+        "Numerical Analysis and Computation"
+    ],
+    [
+        "CSCI 502a",
+        "Numerical Analysis"
+    ],
+    [
+        "CSCI 502b",
+        "Numerical Analysis"
+    ],
+    [
+        "CSCI 504a",
+        "Numerical Solutions of Ordinary and Partial Differential Equations"
+    ],
+    [
+        "CSCI 504b",
+        "Numerical Solutions of Ordinary and Partial Differential Equations"
+    ],
+    [
+        "CSCI 505a",
+        "Applied Probability"
+    ],
+    [
+        "CSCI 505b",
+        "Applied Probability"
+    ],
+    [
+        "CSCI 510",
+        "Software Management and Economics"
+    ],
+    [
+        "CSCI 511",
+        "Personal Software Process (PSP) and Project"
+    ],
+    [
+        "CSCI 512",
+        "Testing and Analysis of Software Systems"
+    ],
+    [
+        "CSCI 520",
+        "Computer Animation and Simulation"
+    ],
+    [
+        "CSCI 521",
+        "Optimization: Theory and Algorithms"
+    ],
+    [
+        "CSCI 522",
+        "Game Engine Development"
+    ],
+    [
+        "CSCI 523L",
+        "Networked Games"
+    ],
+    [
+        "CSCI 524",
+        "Networked Artificial Intelligence"
+    ],
+    [
+        "CSCI 526",
+        "Advanced Mobile Devices and Game Consoles"
+    ],
+    [
+        "CSCI 529a",
+        "Advanced Game Projects"
+    ],
+    [
+        "CSCI 529b",
+        "Advanced Game Projects"
+    ],
+    [
+        "CSCI 530",
+        "Security Systems"
+    ],
+    [
+        "CSCI 531",
+        "Applied Cryptography"
+    ],
+    [
+        "CSCI 533",
+        "Algebraic Combinatorics"
+    ],
+    [
+        "CSCI 534",
+        "Affective Computing"
+    ],
+    [
+        "CSCI 536",
+        "Linear Programming and Extensions"
+    ],
+    [
+        "CSCI 540",
+        "Self-Organization"
+    ],
+    [
+        "CSCI 542",
+        "Neural Computation with Artificial Neural Networks"
+    ],
+    [
+        "CSCI 544",
+        "Applied Natural Language Processing"
+    ],
+    [
+        "CSCI 545",
+        "Robotics"
+    ],
+    [
+        "CSCI 548",
+        "Information Integration on the Web"
+    ],
+    [
+        "CSCI 549",
+        "Nanorobotics"
+    ],
+    [
+        "CSCI 550",
+        "Advanced Data Stores"
+    ],
+    [
+        "CSCI 551",
+        "Computer Networking"
+    ],
+    [
+        "CSCI 553",
+        "Computational Solution of Optimization Problems"
+    ],
+    [
+        "CSCI 554",
+        "Cyber-Physical Systems: A Computing Perspective"
+    ],
+    [
+        "CSCI 555L",
+        "Advanced Operating Systems"
+    ],
+    [
+        "CSCI 556",
+        "Introduction to Cryptography"
+    ],
+    [
+        "CSCI 557",
+        "Computer Systems Architecture"
+    ],
+    [
+        "CSCI 558L",
+        "Internetworking and Distributed Systems Laboratory"
+    ],
+    [
+        "CSCI 559",
+        "Machine Learning I: Supervised Methods"
+    ],
+    [
+        "CSCI 561",
+        "Foundations of Artificial Intelligence"
+    ],
+    [
+        "CSCI 564",
+        "Brain Theory and Artificial Intelligence"
+    ],
+    [
+        "CSCI 565",
+        "Compiler Design"
+    ],
+    [
+        "CSCI 567",
+        "Machine Learning"
+    ],
+    [
+        "CSCI 568",
+        "Requirements Engineering"
+    ],
+    [
+        "CSCI 570",
+        "Analysis of Algorithms"
+    ],
+    [
+        "CSCI 571",
+        "Web Technologies"
+    ],
+    [
+        "CSCI 572",
+        "Information Retrieval and Web Search Engines"
+    ],
+    [
+        "CSCI 573",
+        "Probabilistic Reasoning"
+    ],
+    [
+        "CSCI 574",
+        "Computer Vision"
+    ],
+    [
+        "CSCI 575",
+        "Quantum Computing and Quantum Cryptography"
+    ],
+    [
+        "CSCI 576",
+        "Multimedia Systems Design"
+    ],
+    [
+        "CSCI 577a",
+        "Software Engineering"
+    ],
+    [
+        "CSCI 577b",
+        "Software Engineering"
+    ],
+    [
+        "CSCI 578",
+        "Software Architectures"
+    ],
+    [
+        "CSCI 580",
+        "3-D Graphics and Rendering"
+    ],
+    [
+        "CSCI 581",
+        "Logic and its Applications"
+    ],
+    [
+        "CSCI 582",
+        "Geometric Modeling"
+    ],
+    [
+        "CSCI 585",
+        "Database Systems"
+    ],
+    [
+        "CSCI 586",
+        "Database Systems Interoperability"
+    ],
+    [
+        "CSCI 587",
+        "Geospatial Information Management"
+    ],
+    [
+        "CSCI 589",
+        "Software Engineering for Embedded Systems"
+    ],
+    [
+        "CSCI 590",
+        "Directed Research"
+    ],
+    [
+        "CSCI 594a",
+        "Master’s Thesis"
+    ],
+    [
+        "CSCI 594b",
+        "Master’s Thesis"
+    ],
+    [
+        "CSCI 594z",
+        "Master’s Thesis"
+    ],
+    [
+        "CSCI 596",
+        "Scientific Computing and Visualization"
+    ],
+    [
+        "CSCI 599",
+        "Special Topics"
+    ],
+    [
+        "CSCI 621",
+        "Digital Geometry Processing"
+    ],
+    [
+        "CSCI 652",
+        "Internet Measurement"
+    ],
+    [
+        "CSCI 653",
+        "High Performance Computing and Simulations"
+    ],
+    [
+        "CSCI 658",
+        "Diagnosis and Design of Reliable Digital Systems"
+    ],
+    [
+        "CSCI 662",
+        "Advanced Natural Language Processing"
+    ],
+    [
+        "CSCI 671",
+        "Randomized Algorithms"
+    ],
+    [
+        "CSCI 672",
+        "Approximation Algorithms"
+    ],
+    [
+        "CSCI 673",
+        "Structure and Dynamics of Networked Information"
+    ],
+    [
+        "CSCI 674a",
+        "Advanced Topics in Computer Vision"
+    ],
+    [
+        "CSCI 675",
+        "Convex and Combinatorial Optimization"
+    ],
+    [
+        "CSCI 685",
+        "Advanced Topics in Database Systems"
+    ],
+    [
+        "CSCI 686",
+        "Advanced Big Data Analytics"
+    ],
+    [
+        "CSCI 674b",
+        "Advanced Topics in Computer Vision"
+    ],
+    [
+        "CSCI 790",
+        "Research"
+    ],
+    [
+        "CSCI 794a",
+        "Doctoral Dissertation"
+    ],
+    [
+        "CSCI 794b",
+        "Doctoral Dissertation"
+    ],
+    [
+        "CSCI 794c",
+        "Doctoral Dissertation"
+    ],
+    [
+        "CSCI 794d",
+        "Doctoral Dissertation"
+    ],
+    [
+        "CSCI 794z",
+        "Doctoral Dissertation"
+    ],
+    [
+        "CSCI 404",
+        "Capstone: Creating Your High-Tech Startup"
+    ],
+    [
+        "CSCI 591",
+        "Computer Science Research Colloquium"
+    ],
+    [
+        "CSCI 620",
+        "Computer Animation and Simulation"
+    ],
+    [
+        "CSCI 401",
+        "Capstone: Design and Construction of Large Software Systems"
+    ],
+    [
+        "CSCI 535",
+        "Multimodal Probabilistic Learning of Human Communication"
+    ],
+    [
+        "CSCI 651",
+        "Advanced Computer Networking"
+    ],
+    [
+        "CSCI 668",
+        "Search and Planning"
+    ],
+    [
+        "CSCI 598",
+        "Professional Writing and Communication for Computer Scientists"
+    ],
+    [
+        "CSCI 593",
+        "Mathematical Foundations for System Design: Modeling, Analysis, and Synthesis"
+    ],
+    [
+        "CSCI 368",
+        "Programming Graphical User Interfaces"
+    ],
+    [
+        "CSCI 435",
+        "Professional C++"
+    ],
+    [
+        "CSCI 439",
+        "Compiler Development"
+    ],
+    [
+        "CSCI 100xg",
+        "Explorations in Computing"
+    ],
+    [
+        "CSCI 610",
+        "Advanced Program Analysis and Verification"
+    ],
+    [
+        "CSCI 569",
+        "Social Media Analytics"
+    ],
+    [
+        "CSCI 677",
+        "Advanced Computer Vision"
+    ],
+    [
+        "CSCI 644",
+        "Natural Language Dialogue Systems"
+    ],
+    [
+        "CSCI 656",
+        "Networked Systems in Cloud Computing"
+    ],
+    [
+        "CSCI 631",
+        "Privacy in the World of Big Data"
+    ],
+    [
+        "CSCI 699",
+        "Special Topics"
+    ],
+    [
+        "CSCI 356",
+        "Introduction to Computer Systems"
+    ],
+    [
+        "CSCI 102L",
+        "Fundamentals of Computation"
+    ],
+    [
+        "CSCI 426",
+        "Game Prototyping"
+    ],
+    [
+        "CSCI 563",
+        "Building Knowledge Graphs"
+    ],
+    [
+        "CSCI 583",
+        "Machine Learning Theory"
+    ],
+    [
+        "CSCI 467",
+        "Introduction to Machine Learning"
+    ],
+    [
+        "CSCI 538",
+        "Augmented, Virtual and Mixed Reality"
+    ],
+    [
+        "CSCI 659",
+        "Introduction to Online Optimization"
+    ],
+    [
+        "CSCI 566",
+        "Deep Learning and Its Applications"
+    ],
+    [
+        "CSCI 475",
+        "Theory of Computation"
+    ],
+    [
+        "CSCI 477",
+        "Concepts of Programming Languages"
+    ],
+    [
+        "CSCI 513",
+        "Autonomous Cyber-Physical Systems"
+    ],
+    [
+        "CSCI 655",
+        "Advanced Topics in Operating Systems"
+    ],
+    [
+        "CSCI 663",
+        "Artificial Intelligence for Social Good"
+    ],
+    [
+        "CSCI 527",
+        "Applied Machine Learning for Games"
+    ],
+    [
+        "CSCI 678",
+        "Theoretical Machine Learning"
+    ],
+    [
+        "CSCI 532",
+        "Innovation for Defense Applications"
+    ],
+    [
+        "CSCI 625",
+        "Program Synthesis and Computer-Aided Verification"
+    ],
+    [
+        "CSCI 461",
+        "Artificial Intelligence for Sustainable Development"
+    ],
+    [
+        "CSCI 626",
+        "Text as Data"
+    ],
+    [
+        "CSCI 667",
+        "Advanced Topics in Interconnection Network Design and Analysis"
+    ],
+    [
+        "CSCI 612",
+        "Optimization for the Information and Data Sciences"
+    ],
+    [
+        "CSCI 611",
+        "Mathematics of High-Dimensional Data"
+    ],
+    [
+        "CSCI 661",
+        "Advanced Topics in Computer System Architecture"
+    ],
+    [
+        "CSCI 649",
+        "Haptic Interfaces and Virtual Environments"
+    ],
+    [
+        "CSCI 547",
+        "Robot Dynamics and Control"
+    ]
+]
