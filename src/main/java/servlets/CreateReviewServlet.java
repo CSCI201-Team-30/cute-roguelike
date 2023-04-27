@@ -57,23 +57,17 @@ public class CreateReviewServlet extends HttpServlet {
 
             // Execute the prepared statement
             int reviewCreated = ps.executeUpdate();
-
+            PrintWriter out = response.getWriter();
+            
             // Check if the review was successfully created
-            if (reviewCreated == 1) {
+            if (reviewCreated > 0) {
                 // Write a success response
                 response.setContentType("text/html");
-                PrintWriter out = response.getWriter();
-                out.println("<html>");
-                out.println("<head>");
-                out.println("<title>Review Created</title>");
-                out.println("</head>");
-                out.println("<body>");
-                out.println("<h1>Review Created</h1>");
-                out.println("</body>");
-                out.println("</html>");
+                
+                out.print("success");
             } else {
                 // Write an error response
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error creating review");
+            	out.print("failed");
             }
         } catch (ClassNotFoundException | SQLException ex) {
             // Handle exceptions

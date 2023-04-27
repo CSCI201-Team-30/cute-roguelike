@@ -1,3 +1,5 @@
+
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -17,32 +19,28 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.JsonObject;
 
-
-
 /**
- * Servlet implementation class ReviewServlet
+ * Servlet implementation class AccountServlet
  */
-@WebServlet("/DisplayReviewServlet")
-public class DisplayReviewServlet extends HttpServlet {
+@WebServlet("/AccountServlet")
+public class AccountServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-//	private static Vector<String> classNames = new Vector<>();
 	private static Vector<Review> reviews = new Vector<>();
-    
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DisplayReviewServlet() {
+    public AccountServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
-    
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String courseName = request.getParameter("name"); //get the course name to search in mySQL
-		// Search in mySQL the prefix and courseID for reviews
+		String username = request.getParameter("username");
 		Connection conn = null;
 		Statement st = null;
 		ResultSet rs = null;
@@ -50,18 +48,19 @@ public class DisplayReviewServlet extends HttpServlet {
 			// the mysql address is temporarily used, should be updated later 
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/CSCI201Lab9?user=root&password=Guoshuangjia1$");
 			st = conn.createStatement();
-			rs = st.executeQuery("SELECT ClassName, profname, coursename, title, body FROM Reviews");
+			rs = st.executeQuery("SELECT username, profname, coursename, title, body FROM Reviews WHERE username=" + username);
 			while(rs.next()) {
 				String className = rs.getString("className");
 				String profName = rs.getString("profName");
 				int rating = rs.getInt("Rating");
-				String headline = rs.getString("Headline");
+				String title = rs.getString("title");
 				String body = rs.getString("body");
 //				if(classNames.indexOf(className) == -1) {
 //					classNames.add(className);
 //				}
-				reviews.add(new Review(className, profName, rating, headline, body));
-			}			
+				reviews.add(new Review(className, profName, rating, title, body));
+			}
+
 		} catch (SQLException sqle){
 			System.out.println (sqle.getMessage());
 		} finally {
@@ -79,11 +78,9 @@ public class DisplayReviewServlet extends HttpServlet {
 				System.out.println(sqle.getMessage());
 			}
 		}
-
 		
-		// Write JSON object to response output stream
 		List<JsonObject> jsonList = new ArrayList<>();
-		PrintWriter out = response.getWriter();
+		
 		for(Review r : reviews) {
 			JsonObject json = new JsonObject();
 			json.addProperty("classname", r.getCourseName());
@@ -93,21 +90,21 @@ public class DisplayReviewServlet extends HttpServlet {
 			json.addProperty("body", r.getBody());
 			jsonList.add(json);
 		}
-
+		PrintWriter out = response.getWriter();
 		if(!reviews.isEmpty()) {
 			out.print(jsonList.toString());
 		}
 		else {
 			out.print("No result found");
 		}
-    }
+	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.doGet(request, response);
+		doGet(request, response);
 	}
 
 }

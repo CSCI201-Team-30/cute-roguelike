@@ -7,14 +7,14 @@ public class Review {
 	private String courseName;
 	private String profName;
 	private int rating;
-	private String headline;
+	private String title;
 	private String body;
 	
 	public Review(String courseName, String profName, int rating, String headline, String body) {
 		this.courseName = courseName;
 		this.profName = profName;
 		this.rating = rating;
-		this.headline = headline;
+		this.title = title;
 		this.body = body;
 	}
 	
@@ -30,8 +30,8 @@ public class Review {
 		return rating;
 	}
 
-	public String getHeadline() {
-		return headline;
+	public String getTitle() {
+		return title;
 	}
 
 	public String getBody() {
